@@ -33,7 +33,7 @@ export const CustomStrategiesSection = () => {
       title: "Reduction in admin workload",
       description:
         "Corevia Medical Group streamlined appointment booking and follow-up with Pyrahealth.ai's intelligent workflow automation.",
-      logo: "/asset-43-3.svg",
+      logo: "./assets/images/case-1.png",
       logoWidth: "147px",
       logoHeight: "38px",
     },
@@ -42,7 +42,7 @@ export const CustomStrategiesSection = () => {
       title: "Increase in patient bookings",
       description:
         "Auralis Care used AI-powered outreach to boost new client acquisition in under 90 days — without increasing staff hours.",
-      logo: "/asset-43-5-1.svg",
+      logo: "./assets/images/case-2.png",
       logoWidth: "178px",
       logoHeight: "46px",
     },
@@ -52,7 +52,7 @@ export const CustomStrategiesSection = () => {
       title: "Improvement in follow-up engagement",
       description:
         "Vellara Clinic automated personalized post-visit messages and saw triple the patient return rate within the first month.",
-      logo: "/asset-43-4.svg",
+      logo: "./assets/images/case-3.png",
       logoWidth: "178px",
       logoHeight: "46px",
     },

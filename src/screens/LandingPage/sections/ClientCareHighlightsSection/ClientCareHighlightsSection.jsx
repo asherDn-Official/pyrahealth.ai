@@ -124,7 +124,7 @@ export const ClientCareHighlightsSection = () => {
                     >
                       {item.text}
                     </div>
-                  ),
+                  )
                 )}
               </div>
             </div>
@@ -142,14 +142,18 @@ export const ClientCareHighlightsSection = () => {
                 <img
                   className="w-[24px] lg:w-[27.64px] h-[21px] lg:h-[24.2px]"
                   alt="Union"
-                  src="/union.svg"
+                  src="../../../assets/images/footer-logo.png"
                 />
               </div>
             </div>
           </div>
 
           {/* Social links */}
-          <img className="flex-none h-6 lg:h-auto" alt="Frame" src="/frame-1686556807.svg" />
+          <img
+            className="flex-none h-6 lg:h-auto"
+            alt="Frame"
+            src="/frame-1686556807.svg"
+          />
 
           {/* Legal links */}
           <div className="inline-flex items-center gap-1.5 flex-wrap justify-center lg:justify-end">
