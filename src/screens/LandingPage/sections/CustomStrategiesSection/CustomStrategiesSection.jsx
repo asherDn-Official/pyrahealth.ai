@@ -1,23 +1,27 @@
-import React from 'react';
-import { HeroSection } from '../../sections/CustomStrategiesSection/componets/sections/HeroSection';
-import { BenefitsSection } from '../../sections/CustomStrategiesSection/componets/sections/BenefitsSection';
-import { CaseStudiesSection } from '../../sections/CustomStrategiesSection/componets/sections/CaseStudiesSection';
-import { StrategySection } from '../../sections/CustomStrategiesSection/componets/sections/StrategySection';
-import { GrowthProcessSection } from '../../sections/CustomStrategiesSection/componets/sections/GrowthProcessSection';
-import { TestimonialsSection } from '../../sections/CustomStrategiesSection/componets/sections/TestimonialsSection';
-import { BlogSection } from '../../sections/CustomStrategiesSection/componets/sections/BlogSection';
-import { FAQSection } from '../../sections/CustomStrategiesSection/componets/sections/FAQSection';
+import React from "react";
+import { HeroSection } from "../../sections/CustomStrategiesSection/componets/sections/HeroSection";
+import { BenefitsSection } from "../../sections/CustomStrategiesSection/componets/sections/BenefitsSection";
+import { CaseStudiesSection } from "../../sections/CustomStrategiesSection/componets/sections/CaseStudiesSection";
+import { StrategySection } from "../../sections/CustomStrategiesSection/componets/sections/StrategySection";
+import { GrowthProcessSection } from "../../sections/CustomStrategiesSection/componets/sections/GrowthProcessSection";
+import { TestimonialsSection } from "../../sections/CustomStrategiesSection/componets/sections/TestimonialsSection";
+import { BlogSection } from "../../sections/CustomStrategiesSection/componets/sections/BlogSection";
+import { FAQSection } from "../../sections/CustomStrategiesSection/componets/sections/FAQSection";
 
-
-import heroImage from '../../../../assets/images/HeroImage.png';
-import layer from '../../../../assets/images/Layer.png';
-import logo from '../../../../assets/images/logo.png';
-import contactLogo from '../../../../assets/images/contactlogo.png'
-
+import heroImage from "../../../../assets/images/HeroImage.png";
+import layer from "../../../../assets/images/Layer.png";
+import logo from "../../../../assets/images/logo.png";
+import contactLogo from "../../../../assets/images/contactlogo.png";
 
 export const CustomStrategiesSection = () => {
   // Data can be moved to a separate constants file if preferred
-  const navItems = ["Who We Help", "Capabilities", "Insights", "Case Studies", "About Us"];
+  const navItems = [
+    "Who We Help",
+    "Capabilities",
+    "Insights",
+    "Case Studies",
+    "About Us",
+  ];
   const benefits = [
     "Attract more patients through intelligent, automated marketing",
     "Streamline daily tasks with scheduling, reminders, and admin automation",
@@ -54,7 +58,7 @@ export const CustomStrategiesSection = () => {
     },
   ];
 
- const strategyTabs = [
+  const strategyTabs = [
     {
       title: "AI-Driven Patient Acquisition",
       subtitle: 'Bring More Patients to Your Clinic — with Less Effort"',
@@ -77,7 +81,7 @@ export const CustomStrategiesSection = () => {
     },
   ];
 
- const growthSteps = [
+  const growthSteps = [
     {
       title: "Diagnose Your Growth Leaks",
       description:
@@ -126,7 +130,7 @@ export const CustomStrategiesSection = () => {
       logo: "/container.svg",
     },
   ];
- const blogPosts = [
+  const blogPosts = [
     {
       image: "/blog-image01.png",
       title: "How AI Is Changing Patient Expectations in 2025.",
@@ -175,19 +179,18 @@ export const CustomStrategiesSection = () => {
     "Will my team need to be tech-savvy to use it?",
   ];
 
-
   return (
     <div className="flex flex-col w-full items-center gap-3">
-      <HeroSection 
-        layer={layer} 
-        logo={logo} 
-        contactLogo={contactLogo} 
-        heroImage={heroImage} 
-        navItems={navItems} 
+      <HeroSection
+        layer={layer}
+        logo={logo}
+        contactLogo={contactLogo}
+        heroImage={heroImage}
+        navItems={navItems}
       />
-       <BenefitsSection benefits={benefits} />
-      {/* <CaseStudiesSection caseStudies={caseStudies} />
-      <StrategySection strategyTabs={strategyTabs} />
+      <BenefitsSection benefits={benefits} />
+      <CaseStudiesSection caseStudies={caseStudies} />
+      {/* <StrategySection strategyTabs={strategyTabs} />
       <GrowthProcessSection growthSteps={growthSteps} />
       <TestimonialsSection testimonials={testimonials} />
       <BlogSection blogPosts={blogPosts} />

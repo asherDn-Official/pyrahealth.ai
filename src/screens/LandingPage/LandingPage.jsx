@@ -6,7 +6,7 @@ import { InsightsAndArticlesSection } from "./sections/InsightsAndArticlesSectio
 export const LandingPage = () => {
   return (
     <div className="bg-white w-full">
-      <div className="bg-white w-full max-w-[1440px] mx-auto overflow-hidden">
+      <div className="bg-white w-full mx-auto overflow-hidden">
         <CustomStrategiesSection />
         <InsightsAndArticlesSection />
         <ClientCareHighlightsSection />
