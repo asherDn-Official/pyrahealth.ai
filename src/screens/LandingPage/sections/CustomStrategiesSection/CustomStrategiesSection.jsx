@@ -107,7 +107,7 @@ export const CustomStrategiesSection = () => {
       iconSrc: "idea",
     },
   ];
-  
+
   const testimonials = [
     {
       content:
@@ -194,8 +194,8 @@ export const CustomStrategiesSection = () => {
       {/* <StrategySection strategyTabs={strategyTabs} /> */}
       <GrowthProcessSection growthSteps={growthSteps} />
       {/* <TestimonialsSection testimonials={testimonials} />
-      <BlogSection blogPosts={blogPosts} />
-      <FAQSection faqItems={faqItems} /> */}
+      <BlogSection blogPosts={blogPosts} /> */}
+      <FAQSection faqItems={faqItems} />
     </div>
   );
 };
