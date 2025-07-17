@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from "../../../../../../components/ui/card";
 import { Separator } from "../../../../../../components/ui/separator";
+
+
 import CalendarImage from '../../../../../../assets/images/strategrysection/calender.png';
 // Import other images you want to use for different tabs
-import AIImage from '../../../../../../assets/images/strategrysection/calender.png';
-import EngagementImage from '../../../../../../assets/images/strategrysection/calender.png';
-import WorkflowImage from '../../../../../../assets/images/strategrysection/workflow.avif';
+import AIImage from '../../../../../../assets/images/strategrysection/AI-Driven Patient Acquisition.png';
+import EngagementImage from '../../../../../../assets/images/strategrysection/Patient Engagement & Follow-Up.png';
+import WorkflowImage from '../../../../../../assets/images/strategrysection/Workflow & Operations Automation.png';
 
 // Create an image map based on tab titles
 const imageMap = {
