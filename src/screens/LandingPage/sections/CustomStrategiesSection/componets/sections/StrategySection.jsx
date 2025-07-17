@@ -73,7 +73,7 @@ export const StrategySection = () => {
   const currentImage = imageMap[activeTab?.title] || CalendarImage;
 
   return (
-    <section className="flex w-full items-center justify-center px-4 sm:px-6 py-4 bg-[#fff6f4]">
+    <section className="flex w-full items-center justify-center px-4 sm:px-6 py-16 bg-[#fff6f4]">
       <div className="flex flex-col w-full max-w-[1244px] items-center gap-12 ">
          <h1 className="text-4xl font-bold text-center max-w-2xl">
           Smarter AI Strategies for Real Patient 
