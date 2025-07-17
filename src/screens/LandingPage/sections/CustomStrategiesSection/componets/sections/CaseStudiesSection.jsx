@@ -18,7 +18,7 @@ export const CaseStudiesSection = ({ caseStudies }) => {
   }));
 
   return (
-    <section className="flex flex-col w-full items-center justify-center gap-8 lg:gap-[52px] py-8 lg:py-16 bg-white">
+    <section id="CaseStudies" className="flex flex-col w-full items-center justify-center gap-8 lg:gap-[52px] py-8 lg:py-16 bg-white">
       <div className="flex flex-col items-center gap-4 lg:gap-5 w-full px-4">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-1px] mb-4 lg:mb-6 text-[#121416]">
           Client Case{" "}

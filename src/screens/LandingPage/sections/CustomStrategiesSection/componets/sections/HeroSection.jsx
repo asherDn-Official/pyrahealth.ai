@@ -119,7 +119,7 @@ export const HeroSection = ({
                     {item}
                   </a>
                 ))}
-                <Button className="rounded-full bg-white text-black font-bold flex items-center gap-2 text-sm px-4 py-2 w-full justify-center mt-2">
+                <Button className="rounded-full bg-white hover:bg-gray-100  text-black font-bold flex items-center gap-2 text-sm px-4 py-2 w-full justify-center mt-2">
                   <a href="#contactus">
                     <span>Contact us</span>
                   </a>

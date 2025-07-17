@@ -8,7 +8,7 @@ import idea from '../../../../../../assets/images/growthProcess/idea.png'
 
 export const GrowthProcessSection = ({ growthSteps }) => {
   return (
-    <section className="flex w-full items-center justify-center px-4 sm:px-6 py-8 lg:py-16 bg-white">
+    <section  id="Capabilities" className="flex w-full items-center justify-center px-4 sm:px-6 py-8 lg:py-16 bg-white">
       <div className="flex flex-col w-full max-w-[1244px] items-center gap-8 lg:gap-[30px]">
 
 

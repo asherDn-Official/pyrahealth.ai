@@ -4,7 +4,7 @@ import point from "../../../../../../assets/images/point.png";
 
 export const BenefitsSection = ({ benefits }) => {
   return (
-    <section className="flex flex-col lg:flex-row w-full items-center justify-center gap-6 lg:gap-8 xl:gap-[38px] px-4 sm:px-6 lg:px-8 xl:px-[66px] py-8 md:py-12 lg:py-16 bg-[#fff6f4]">
+    <section  id={"AboutUs"} className="flex flex-col lg:flex-row w-full items-center justify-center gap-6 lg:gap-8 xl:gap-[38px] px-4 sm:px-6 lg:px-8 xl:px-[66px] py-8 md:py-12 lg:py-16 bg-[#fff6f4]">
       <div className="flex flex-col items-start gap-4 md:gap-5 lg:gap-6 xl:gap-[26px] max-w-[763px] w-full">
         <div className="flex flex-col items-start gap-3 md:gap-4 lg:gap-5 w-full">
           <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight font-bold">

@@ -2,7 +2,7 @@ import { BlogCard } from "../ui/BlogCard";
 
 export const BlogSection = ({ blogPosts }) => {
   return (
-    <section className="flex flex-col w-full items-center justify-center gap-8 lg:gap-10 py-8 lg:py-[30px]">
+    <section id="Insights" className="flex flex-col w-full items-center justify-center gap-8 lg:gap-10 py-8 lg:py-[30px]">
       <div className="flex flex-col w-full max-w-[1178px] items-center gap-4 lg:gap-5 px-4">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-1px] mb-4 lg:mb-6 text-[#121416]">
           Insights &{" "}
