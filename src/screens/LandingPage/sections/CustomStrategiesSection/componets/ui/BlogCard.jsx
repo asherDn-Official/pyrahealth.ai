@@ -1,17 +1,33 @@
 import { Card, CardContent } from "../../../../../../components/ui/card";
 
-export const BlogCard = ({ image, title, description, date, readTime }) => {
+// Import your blog post images (adjust paths as needed)
+import blogImage1 from "../../../../../../assets/images/blog-1.png";
+import blogImage2 from "../../../../../../assets/images/blog-2.png";
+import blogImage3 from "../../../../../../assets/images/blog-3.png";
+import blogImage4 from "../../../../../../assets/images/blog-4.png";
+
+export const BlogCard = ({
+  title,
+  description,
+  date,
+  readTime,
+  imageIndex, // Added to select different images
+}) => {
+  // Select image based on index
+  const images = [blogImage1, blogImage2, blogImage3, blogImage4];
+  const imageSrc = images[imageIndex] || blogImage1; // Fallback to first image
+
   return (
     <Card className="w-full max-w-[611px] mx-auto rounded-[20px] overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
       <CardContent className="p-0">
         <img
           className="w-full h-[250px] lg:h-[300px] object-cover"
-          alt="Blog thumbnail"
-          src={image}
+          alt={`Blog thumbnail for ${title}`}
+          src={imageSrc}
         />
 
         <div className="p-4 lg:p-5">
-          <div className="h-32 lg:h-36 overflow-hidden">
+          <div className="h-32 lg:h-40 overflow-hidden">
             <h3 className="font-bold text-[#121416] text-xl lg:text-2xl xl:text-[28px] leading-6 lg:leading-7 hover:text-blue-600 transition-colors">
               {title}
             </h3>

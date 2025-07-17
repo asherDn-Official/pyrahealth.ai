@@ -193,8 +193,8 @@ export const CustomStrategiesSection = () => {
       <CaseStudiesSection caseStudies={caseStudies} />
       {/* <StrategySection strategyTabs={strategyTabs} /> */}
       <GrowthProcessSection growthSteps={growthSteps} />
-      {/* <TestimonialsSection testimonials={testimonials} />
-      <BlogSection blogPosts={blogPosts} /> */}
+      <TestimonialsSection testimonials={testimonials} />
+      <BlogSection blogPosts={blogPosts} />
       <FAQSection faqItems={faqItems} />
     </div>
   );
