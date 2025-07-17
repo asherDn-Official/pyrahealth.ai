@@ -149,7 +149,7 @@ export const ClientCareHighlightsSection = () => {
           </div>
 
           {/* Social links */}
-          {/* Social links with responsive margin-left */}
+
           <div className="flex gap-4 ml-[0%] sm:ml-[10%] md:ml-[0%] lg:ml-[15%]">
             <img
               className="flex-none h-6 lg:h-auto"
