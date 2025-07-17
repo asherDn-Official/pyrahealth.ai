@@ -20,7 +20,7 @@ export const HeroSection = ({
       <div className="relative w-full h-full">
         <div className="absolute w-full h-[169px] top-0 left-0 bg-[#88004f] blur-[51.65px]" />
         <img
-          className="absolute w-full h-full top-0 left-0 object-cover"
+          className="absolute w-full h-full top-0 left-0 object-cover  blur-[ 1.65px]"
           alt="Layer"
           src={layer}
         />
