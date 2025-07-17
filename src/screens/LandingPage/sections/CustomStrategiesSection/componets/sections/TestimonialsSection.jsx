@@ -1,6 +1,9 @@
 import { TestimonialCard } from "../ui/TestimonialCard";
+import backImg from '../../../../../../assets/images/testimonial/back.png';
+import nextImg from '../../../../../../assets/images/testimonial/next.png'
 
-export const TestimonialsSection = ({ testimonials }) => {
+
+export const  TestimonialsSection = ({ testimonials }) => {
   return (
     <section className="relative w-full py-12 lg:py-24 bg-[#fff6f3] overflow-hidden">
       <div className="flex flex-col w-full max-w-[1765px] items-start gap-12 lg:gap-[74px] mx-auto px-4 sm:px-6">
@@ -9,7 +12,7 @@ export const TestimonialsSection = ({ testimonials }) => {
             <img
               className="w-[45px] lg:w-[55px] h-8 lg:h-10 mt-2.5 ml-[3px]"
               alt="Previous testimonial"
-              src="/vector-3.svg"
+              src={backImg}  
             />
           </div>
 
@@ -21,7 +24,7 @@ export const TestimonialsSection = ({ testimonials }) => {
             <img
               className="w-[45px] lg:w-[55px] h-8 lg:h-10 mt-2.5 ml-[3px] -rotate-180"
               alt="Next testimonial"
-              src="/vector-6.svg"
+              src={nextImg}
             />
           </div>
         </div>

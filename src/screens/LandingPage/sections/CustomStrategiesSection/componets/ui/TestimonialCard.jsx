@@ -1,4 +1,7 @@
 import { Card, CardContent } from "../../../../../../components/ui/card";
+import profileImage from '../../../../../../assets/images/testimonial/profile.png';
+import companyOne from '../../../../../../assets/images/testimonial/company1.png';
+
 
 export const TestimonialCard = ({ content, author, position, logo }) => {
   return (
@@ -10,7 +13,7 @@ export const TestimonialCard = ({ content, author, position, logo }) => {
 
         <div className="flex flex-col items-center justify-center gap-1.5 w-[135px]">
           <div className="w-[68px] h-[49px]">
-            <div className="w-[67px] h-12 rounded-[1999px] bg-gray-200" />
+            <img  src={profileImage} className="w-[67px] h-12 rounded-[1999px] bg-gray-200" />
           </div>
 
           <div className="flex flex-col items-center gap-[3px] w-full">
@@ -25,7 +28,7 @@ export const TestimonialCard = ({ content, author, position, logo }) => {
           <img
             className="h-auto mt-2 max-w-full"
             alt="Company logo"
-            src={logo}
+            src={companyOne}
           />
         </div>
       </CardContent>
