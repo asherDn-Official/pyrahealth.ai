@@ -1,5 +1,9 @@
 import React from "react";
 import { Separator } from "../../../../components/ui/separator";
+import footerLogo from "../../../../assets/images/footer-logo.png";
+import youtubelogo from "../../../../assets/images/you-tube-icon.png";
+import linkedinlogo from "../../../../assets/images/linkedin-icon.png";
+import applelogo from "../../../../assets/images/appile-icon.png";
 
 export const ClientCareHighlightsSection = () => {
   // Who We Help column data
@@ -139,21 +143,30 @@ export const ClientCareHighlightsSection = () => {
           <div className="flex items-center">
             <div className="flex justify-center items-center">
               <div className="inline-flex items-center gap-[6.12px]">
-                <img
-                  className="w-[24px] lg:w-[27.64px] h-[21px] lg:h-[24.2px]"
-                  alt="Union"
-                  src="../../../assets/images/footer-logo.png"
-                />
+                <img className="" alt="Union" src={footerLogo} />
               </div>
             </div>
           </div>
 
           {/* Social links */}
-          <img
-            className="flex-none h-6 lg:h-auto"
-            alt="Frame"
-            src="/frame-1686556807.svg"
-          />
+          {/* Social links with responsive margin-left */}
+          <div className="flex gap-4 ml-[0%] sm:ml-[10%] md:ml-[0%] lg:ml-[15%]">
+            <img
+              className="flex-none h-6 lg:h-auto"
+              alt="YouTube logo"
+              src={youtubelogo}
+            />
+            <img
+              className="flex-none h-6 lg:h-auto"
+              alt="LinkedIn logo"
+              src={linkedinlogo}
+            />
+            <img
+              className="flex-none h-6 lg:h-auto"
+              alt="Apple logo"
+              src={applelogo}
+            />
+          </div>
 
           {/* Legal links */}
           <div className="inline-flex items-center gap-1.5 flex-wrap justify-center lg:justify-end">
