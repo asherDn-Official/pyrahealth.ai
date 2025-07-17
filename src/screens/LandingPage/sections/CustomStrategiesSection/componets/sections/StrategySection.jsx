@@ -96,9 +96,9 @@ export const StrategySection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col xl:flex-row w-full items-center justify-center gap-12 lg:gap-[92px]">
+        <div className="flex   flex-col xl:flex-row w-full items-center justify-center gap-12 lg:gap-[92px]">
           <div 
-            className="relative w-full max-w-[457px]  max-h-[600px] py-4" 
+            className="relative w-full max-w-[457px]   pl-1 max-h-[600px] py-4" 
             ref={containerRef}
           >
             <div className="flex flex-col w-full items-start gap-6 lg:gap-[30px]">
@@ -131,7 +131,7 @@ export const StrategySection = () => {
               ))}
             </div>
 
-            <div className="inline-flex h-[400px] lg:h-[615px] items-start absolute top-8 lg:top-11 left-0">
+            <div className="inline-flex h-[400px] lg:h-[605px] items-start absolute top-9  left-0">
               <div className="relative self-stretch w-1 rounded-[106.17px] bg-[linear-gradient(0deg,rgba(215,215,215,1)_0%,rgba(215,215,215,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]" />
               <div className="relative self-stretch w-[4.25px] ml-[-4.25px]">
                 <div 
