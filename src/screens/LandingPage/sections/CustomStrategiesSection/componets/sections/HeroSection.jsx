@@ -27,7 +27,7 @@ export const HeroSection = ({
 
         {/* Header/Navigation */}
         <header className="w-full h-16 md:h-20 absolute top-0 left-0 bg-transparent z-50">
-          <div className="flex w-full max-w-[1320px] h-full mx-auto items-center justify-between px-4 sm:px-6 lg:px-8">
+          <div className="flex w-full max-w-[1400px] h-full mx-auto items-center justify-between px-4 sm:px-6 lg:px-8">
             {/* Logo */}
             <div className="flex items-center gap-1 sm:gap-2">
               <img
@@ -126,7 +126,7 @@ export const HeroSection = ({
         </header>
 
         {/* Hero Content */}
-        <div className="flex flex-col lg:flex-row w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 items-center justify-between gap-6 sm:gap-8 lg:gap-12 relative z-10 pt-20 sm:pt-24 lg:pt-32 pb-0 lg:pb-0">
+        <div className="flex flex-col lg:flex-row w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 items-center justify-between gap-6 sm:gap-8 lg:gap-12 relative z-10 pt-20 sm:pt-24 lg:pt-32 pb-0 lg:pb-0">
           {/* Text Content */}
           <div className="flex flex-col w-full lg:w-1/2 items-start justify-center gap-3 sm:gap-4 lg:gap-6">
             <h1 className="text-white text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight lg:leading-[1.2] [text-shadow:0px_4px_13.5px_#00000080] [-webkit-text-stroke:1px_#ff4776]">
