@@ -73,14 +73,14 @@ export const StrategySection = () => {
   const currentImage = imageMap[activeTab?.title] || CalendarImage;
 
   return (
-    <section className="flex w-full items-center justify-center px-4 sm:px-6 py-8 lg:py-16 bg-[#fff6f4]">
-      <div className="flex flex-col w-full max-w-[1244px] items-center gap-12 lg:gap-[74px]">
+    <section className="flex w-full items-center justify-center px-4 sm:px-6 py-4 bg-[#fff6f4]">
+      <div className="flex flex-col w-full max-w-[1244px] items-center gap-12 ">
          <h1 className="text-4xl font-bold text-center max-w-2xl">
           Smarter AI Strategies for Real Patient 
           <span className="text-red-500 pl-2">Growth</span>
         </h1>
         <div className="flex flex-col w-full max-w-[1178px] items-center gap-4 lg:gap-5">
-          <p className="max-w-[1016px] text-[#6c757d] text-lg sm:text-xl lg:text-2xl text-center tracking-[-0.48px] leading-7 lg:leading-9">
+          <p className="max-w-[1016px] text-[#6c757d] text-lg sm:text-xl  text-center tracking-[-0.48px] leading-7 lg:leading-9">
             Discover the future of clinic growth with{" "}
             <a
               rel="noopener noreferrer"

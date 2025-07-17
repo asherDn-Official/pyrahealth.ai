@@ -23,9 +23,9 @@ export const GrowthStepCard = ({ title, description, iconSrc, isLast = false }) 
 
   return (
     <div className="flex flex-col items-center p-2.5 w-full max-w-[273px] relative">
-      <Card className="w-full h-56 lg:h-64 rounded-[40px] shadow-[0px_4px_24.3px_#ffcebd] border-none hover:shadow-[0px_8px_30px_#ffcebd] transition-shadow">
+       <Card className="w-full h-56 lg:h-64 rounded-[40px] shadow-[0px_4px_24.3px_#ffcebd] border-red-500 hover:shadow-[0px_8px_30px_#ffcebd] transition-shadow">
         <CardContent className="flex flex-col items-center gap-4 lg:gap-5 p-4 lg:p-5 h-full justify-center">
-          <h3 className="font-bold text-[#121416] text-lg lg:text-2xl text-center leading-6 lg:leading-[29px] max-w-[186px]">
+          <h3 className="font-bold text-[#121416] text-lg lg:text-xl text-center leading-6 lg:leading-[29px] max-w-[186px]">
             {title}
           </h3>
           <p className="text-[#121416] text-sm lg:text-base text-center leading-5 lg:leading-[21px]">
