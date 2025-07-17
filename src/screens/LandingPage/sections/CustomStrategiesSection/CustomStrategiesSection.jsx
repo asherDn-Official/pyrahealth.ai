@@ -58,28 +58,28 @@ export const CustomStrategiesSection = () => {
     },
   ];
 
-  const strategyTabs = [
-    {
-      title: "AI-Driven Patient Acquisition",
-      subtitle: 'Bring More Patients to Your Clinic — with Less Effort"',
-      isActive: false,
-    },
-    {
-      title: "Smart Appointment Scheduling",
-      subtitle: "Simplify Scheduling — for You and Your Patients",
-      isActive: true,
-    },
-    {
-      title: "Patient Engagement & Follow-Up",
-      subtitle: 'Keep Patients Engaged — Before and After Their Visit"',
-      isActive: false,
-    },
-    {
-      title: "Workflow & Operations Automation",
-      subtitle: "Automate Your Clinic's Busywork — Without Sacrificing Quality",
-      isActive: false,
-    },
-  ];
+    const strategyTabs = [
+      {
+        title: "AI-Driven Patient Acquisition",
+        subtitle: 'Bring More Patients to Your Clinic — with Less Effort"',
+        isActive: false,
+      },
+      {
+        title: "Smart Appointment Scheduling",
+        subtitle: "Simplify Scheduling — for You and Your Patients",
+        isActive: true,
+      },
+      {
+        title: "Patient Engagement & Follow-Up",
+        subtitle: 'Keep Patients Engaged — Before and After Their Visit"',
+        isActive: false,
+      },
+      {
+        title: "Workflow & Operations Automation",
+        subtitle: "Automate Your Clinic's Busywork — Without Sacrificing Quality",
+        isActive: false,
+      },
+    ];
 
   const growthSteps = [
     {
@@ -191,7 +191,7 @@ export const CustomStrategiesSection = () => {
       />
       <BenefitsSection benefits={benefits} />
       <CaseStudiesSection caseStudies={caseStudies} />
-      {/* <StrategySection strategyTabs={strategyTabs} /> */}
+      <StrategySection strategyTabs={strategyTabs} />
       <GrowthProcessSection growthSteps={growthSteps} />
       <TestimonialsSection testimonials={testimonials} />
       <BlogSection blogPosts={blogPosts} />
