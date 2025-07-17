@@ -86,27 +86,28 @@ export const CustomStrategiesSection = () => {
       title: "Diagnose Your Growth Leaks",
       description:
         "We start by mapping your patient journey and identifying where you're losing leads, time, or revenue fast.",
-      iconSrc: "/vector-32.svg",
+      iconSrc: "arrow",
     },
     {
       title: "Design Your AI Acceleration Plan",
       description:
         "Our team crafts a custom growth blueprint, powered by real data and built to fit your clinic's goals, specialties, and systems.",
-      iconSrc: "/vector-34.svg",
+      iconSrc: "brain",
     },
     {
       title: "Deploy Automation Where It Matters",
       description:
         "We implement AI-driven solutions — from smart scheduling to follow-up automation — tailored to maximize results and minimize busywork.",
-      iconSrc: "/vector-1.svg",
+      iconSrc: "flag",
     },
     {
       title: "Optimize, Learn, and Scale",
       description:
         "Your clinic evolves. So does our strategy. We continuously monitor, adjust, and optimize based on performance data and patient behavior — all without slowing your team down.",
-      iconSrc: "/frame-1686556808.svg",
+      iconSrc: "idea",
     },
   ];
+  
   const testimonials = [
     {
       content:
@@ -190,9 +191,9 @@ export const CustomStrategiesSection = () => {
       />
       <BenefitsSection benefits={benefits} />
       <CaseStudiesSection caseStudies={caseStudies} />
-      {/* <StrategySection strategyTabs={strategyTabs} />
+      {/* <StrategySection strategyTabs={strategyTabs} /> */}
       <GrowthProcessSection growthSteps={growthSteps} />
-      <TestimonialsSection testimonials={testimonials} />
+      {/* <TestimonialsSection testimonials={testimonials} />
       <BlogSection blogPosts={blogPosts} />
       <FAQSection faqItems={faqItems} /> */}
     </div>
