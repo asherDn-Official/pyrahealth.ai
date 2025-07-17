@@ -181,7 +181,7 @@ export const CustomStrategiesSection = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center gap-3">
+    <div className="flex flex-col w-full items-center ">
       <HeroSection
         layer={layer}
         logo={logo}
@@ -191,7 +191,7 @@ export const CustomStrategiesSection = () => {
       />
       <BenefitsSection benefits={benefits} />
       <CaseStudiesSection caseStudies={caseStudies} />
-      {/* <StrategySection strategyTabs={strategyTabs} /> */}
+      <StrategySection strategyTabs={strategyTabs} />
       <GrowthProcessSection growthSteps={growthSteps} />
       <TestimonialsSection testimonials={testimonials} />
       <BlogSection blogPosts={blogPosts} />
