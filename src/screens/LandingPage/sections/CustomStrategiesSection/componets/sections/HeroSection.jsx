@@ -56,7 +56,8 @@ export const HeroSection = ({
             {/* Contact Button and Mobile Menu Toggle */}
             <div className="flex items-center gap-2 sm:gap-4">
               <Button className="hidden sm:flex rounded-full bg-white text-black font-bold items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-gray-100 transition-colors">
-                <span>Contact us</span>
+                <a href="#contactus">
+                  <span>Contact us</span></a>
                 <img
                   className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5"
                   alt="Chatting"
@@ -117,7 +118,9 @@ export const HeroSection = ({
                   </a>
                 ))}
                 <Button className="rounded-full bg-white text-black font-bold flex items-center gap-2 text-sm px-4 py-2 w-full justify-center mt-2">
-                  <span>Contact us</span>
+                   <a href="#contactus">
+                     <span>Contact us</span>
+                    </a> 
                   <img className="w-4 h-4" alt="Chatting" src={contactLogo} />
                 </Button>
               </div>

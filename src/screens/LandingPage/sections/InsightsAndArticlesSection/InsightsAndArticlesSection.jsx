@@ -36,7 +36,7 @@ export const InsightsAndArticlesSection = () => {
   ];
 
   return (
-    <section className="flex flex-col lg:flex-row w-full items-center gap-8 lg:gap-[50px] px-4 sm:px-8 lg:px-[60px] py-16 lg:py-[123px] bg-[#fff6f4]">
+    <section id="contactus"  className="flex flex-col lg:flex-row w-full items-center gap-8 lg:gap-[50px] px-4 sm:px-8 lg:px-[60px] py-16 lg:py-[123px] bg-[#fff6f4]">
       <div className="flex flex-col w-full lg:w-[484px] items-start gap-8 lg:gap-12">
         <div className="flex flex-col items-start gap-4 lg:gap-5 w-full">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-1px] mb-4 lg:mb-6 text-[#121416]">
