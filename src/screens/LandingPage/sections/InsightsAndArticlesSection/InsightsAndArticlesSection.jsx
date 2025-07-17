@@ -6,6 +6,8 @@ import {
   Select,
   SelectTrigger,
   SelectValue,
+  SelectContent,
+  SelectItem,
 } from "../../../../components/ui/select";
 import { Textarea } from "../../../../components/ui/textarea";
 
@@ -18,23 +20,36 @@ export const InsightsAndArticlesSection = () => {
     { id: "company", label: "Company", type: "text" },
   ];
 
+  // Country options
+  const countries = [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "Australia",
+    "Germany",
+    "France",
+    "India",
+    "Japan",
+    "Brazil",
+    "South Africa",
+    "Other",
+  ];
+
   return (
     <section className="flex flex-col lg:flex-row w-full items-center gap-8 lg:gap-[50px] px-4 sm:px-8 lg:px-[60px] py-16 lg:py-[123px] bg-[#fff6f4]">
       <div className="flex flex-col w-full lg:w-[484px] items-start gap-8 lg:gap-12">
         <div className="flex flex-col items-start gap-4 lg:gap-5 w-full">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-1px] mb-4 lg:mb-6 text-[#121416]">
+            Ready, Set,{" "}
+            <span className="bg-[linear-gradient(180deg,rgba(114,0,98,1)_0%,rgba(255,45,125,1)_46%,rgba(246,120,0,1)_100%)] text-transparent bg-clip-text">
+              Grow.
+            </span>
+          </h2>
+
           <p className="font-['Satoshi-Regular',Helvetica] font-normal text-black text-lg sm:text-xl lg:text-2xl tracking-[-0.48px] leading-7 lg:leading-[34px]">
             <span className="tracking-[-0.12px]">
-              Discover the future of clinic growth with{" "}
+              Discover the future of clinic growth with Pyrahealth.ai
             </span>
-
-            <a
-              href="http://pyrahealth.ai/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:underline"
-            >
-              <span className="tracking-[-0.12px]">Pyrahealth.ai</span>
-            </a>
 
             <span className="tracking-[-0.12px]">
               . Our AI-driven solutions combine smart patient acquisition,
@@ -51,11 +66,9 @@ export const InsightsAndArticlesSection = () => {
       </div>
 
       <Card className="flex flex-col w-full lg:w-[750px] items-start rounded-[20px] border-2 border-solid border-[#fff1d7] shadow-[0px_4px_35.1px_#ffece0] backdrop-blur-[28.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(28.5px)_brightness(100%)]">
-        <CardContent className="w-full p-6 lg:p-[41px] lg:pt-[27px]">
+        <CardContent className="w-full bg-[#ffffff] rounded-[20px] p-6 lg:p-[41px] lg:pt-[27px]">
           <div className="w-full">
-            <h2 className="mb-8 lg:mb-[59px] font-['Inter',Helvetica] font-medium text-white-font text-2xl lg:text-[28px] text-center tracking-[0] leading-8 lg:leading-[33.6px]">
-              Have a requirement? Let&#39;s discuss.
-            </h2>
+            <h2 className="mb-8 lg:mb-[59px] font-['Inter',Helvetica] font-medium text-white-font text-2xl lg:text-[28px] text-center tracking-[0] leading-8 lg:leading-[33.6px]"></h2>
 
             {formFields.map((field) => (
               <div
@@ -77,10 +90,23 @@ export const InsightsAndArticlesSection = () => {
             ))}
 
             <div className="mb-4 lg:mb-[20px] pb-3 lg:pb-[15px] border-b border-[#dce2f2]">
+              <label
+                htmlFor="country"
+                className="block mb-2 font-['Satoshi-Regular',Helvetica] font-normal text-[#121416] text-sm lg:text-[15.6px] tracking-[0] leading-5 lg:leading-[21px]"
+              >
+                Country
+              </label>
               <Select>
-                <SelectTrigger className="border-none shadow-none focus-visible:ring-0 p-0 h-12 lg:h-[57px] font-['Satoshi-Regular',Helvetica] text-sm lg:text-base">
-                  <SelectValue placeholder="---Select Country---" />
+                <SelectTrigger className="border-none shadow-none focus-visible:ring-0 p-0 h-[25px] lg:h-[30px] font-['Satoshi-Regular',Helvetica] text-sm lg:text-base">
+                  <SelectValue placeholder="Select Country" />
                 </SelectTrigger>
+                <SelectContent>
+                  {countries.map((country) => (
+                    <SelectItem key={country} value={country}>
+                      {country}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
               </Select>
             </div>
 
