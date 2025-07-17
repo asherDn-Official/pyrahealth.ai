@@ -9,6 +9,10 @@
   }
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 :root {
   --icon-color: rgba(34, 35, 37, 1);
   --neutralblue-black40: rgba(228, 229, 231, 1);

@@ -181,7 +181,7 @@ export const CustomStrategiesSection = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center ">
+    <div className="flex flex-col w-full items-center   ">
       <HeroSection
         layer={layer}
         logo={logo}
