@@ -89,15 +89,9 @@ export const InsightsAndArticlesSection = () => {
               </div>
             ))}
 
-            <div className="mb-4 lg:mb-[20px] pb-3 lg:pb-[15px] border-b border-[#dce2f2]">
-              <label
-                htmlFor="country"
-                className="block mb-2 font-['Satoshi-Regular',Helvetica] font-normal text-[#121416] text-sm lg:text-[15.6px] tracking-[0] leading-5 lg:leading-[21px]"
-              >
-                Country
-              </label>
+            <div className="mb-4 lg:mb-[20px] pb-3 lg:pb-[15px] ">
               <Select>
-                <SelectTrigger className="border-none shadow-none focus-visible:ring-0 p-0 h-[25px] lg:h-[30px] font-['Satoshi-Regular',Helvetica] text-sm lg:text-base">
+                <SelectTrigger className="border-none shadow-none p-0 h-[25px] lg:h-[30px] font-['Satoshi-Regular',Helvetica] text-sm lg:text-base">
                   <SelectValue placeholder="Select Country" />
                 </SelectTrigger>
                 <SelectContent>
