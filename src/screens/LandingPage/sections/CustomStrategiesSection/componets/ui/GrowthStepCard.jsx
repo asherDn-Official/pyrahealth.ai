@@ -1,4 +1,5 @@
 import { Card, CardContent } from "../../../../../../components/ui/card";
+<<<<<<< Updated upstream
 import arrow from '../../../../../../assets/images/growthProcess/arrow.png'
 import brain from '../../../../../../assets/images/growthProcess/brain.png'
 import flag from '../../../../../../assets/images/growthProcess/flag.png'
@@ -14,6 +15,9 @@ const iconMap = {
 };
 
 
+=======
+import arrowImage from '../../../../../../assets/images/arrow.png'
+>>>>>>> Stashed changes
 
 export const GrowthStepCard = ({ title, description, iconSrc, isLast = false }) => {
 
@@ -59,9 +63,13 @@ export const GrowthStepCard = ({ title, description, iconSrc, isLast = false }) 
       {!isLast && (
         <div className="w-[100px] absolute top-52 left-56 lg:w-[115px] h-[100px] lg:h-[115px] overflow-hidden rotate-[-41.81deg] mt-4 lg:mt-8 hidden lg:block">
           <img
-            className="w-[140px] lg:w-[158px] h-[140px] lg:h-[157px] rotate-[41.81deg]"
+            className="rotate-[41.81deg]"
             alt="Arrow"
+<<<<<<< Updated upstream
             src={Arrowright}
+=======
+            src={arrowImage}
+>>>>>>> Stashed changes
           />
         </div>
       )}
