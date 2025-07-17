@@ -61,6 +61,7 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        satoshi: ['Satoshi', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

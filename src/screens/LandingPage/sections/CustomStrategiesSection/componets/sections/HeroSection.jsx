@@ -5,6 +5,7 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from "../../../../../../components/ui/navigation-menu";
+import upArrow from '../../../../../../assets/images/top-right.png'
 
 export const HeroSection = ({
   layer,
@@ -150,7 +151,8 @@ export const HeroSection = ({
             </p>
             <Button className="h-11 sm:h-12 lg:h-[61px] px-5 sm:px-6 lg:px-9 bg-white text-black rounded-full font-bold text-xs sm:text-sm md:text-lg tracking-[0.72px] shadow-[0px_4px_19.6px_#00000040] border border-[#ffffff52] flex items-center gap-2 hover:bg-gray-100 transition-colors">
               Get Your Custom Growth Plan
-              <div className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 bg-[url(/vector-10.svg)] bg-[100%_100%]" />
+              <img src={upArrow} alt="" className="w-3 h-3  sm:w-4 sm:h-4 lg:w-5 lg:h-5 bg-[url(/vector-10.svg)] bg-[100%_100%]"  />
+              <div />
             </Button>
           </div>
 
