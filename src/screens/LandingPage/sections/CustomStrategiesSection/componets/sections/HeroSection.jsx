@@ -20,7 +20,8 @@ export const HeroSection = ({
       <div className="relative w-full h-full">
         <div className="absolute w-full h-[169px] top-0 left-0 bg-[#88004f] blur-[51.65px]" />
         <img
-          className="absolute w-full h-full top-0 left-0 object-cover  blur-[ 1.65px]"
+          className="absolute w-full h-full top-0 left-0 object-cover"
+          style={{opacity: 0.3}}
           alt="Layer"
           src={layer}
         />
@@ -46,7 +47,7 @@ export const HeroSection = ({
                 {navItems.map((item, index) => (
                   <NavigationMenuItem key={index}>
                     <span className="font-bold text-white text-sm xl:text-lg [text-shadow:1px_1px_8.3px_#0096f280] cursor-pointer hover:opacity-80 transition-opacity">
-                      {item}
+                      <a href={`#${item.replace(/\s+/g, "")}`}>{item} </a>
                     </span>
                   </NavigationMenuItem>
                 ))}
@@ -111,16 +112,16 @@ export const HeroSection = ({
                   <a
                     key={index}
                     className="text-white font-medium py-2 px-2 hover:bg-white/10 rounded transition-colors"
-                    href="#"
+                    href={`#${item.replace(/\s+/g, "")}`} 
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item}
                   </a>
                 ))}
                 <Button className="rounded-full bg-white text-black font-bold flex items-center gap-2 text-sm px-4 py-2 w-full justify-center mt-2">
-                   <a href="#contactus">
-                     <span>Contact us</span>
-                    </a> 
+                  <a href="#contactus">
+                    <span>Contact us</span>
+                  </a>
                   <img className="w-4 h-4" alt="Chatting" src={contactLogo} />
                 </Button>
               </div>
