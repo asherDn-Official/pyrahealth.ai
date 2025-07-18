@@ -9,6 +9,18 @@ export const TestimonialsSection = ({ testimonials }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if mobile on mount and resize
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 1024); // Adjust breakpoint as needed
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   // Handle next button click
   const handleNext = () => {
@@ -17,7 +29,6 @@ export const TestimonialsSection = ({ testimonials }) => {
     } else {
       setCurrentIndex(0); // Loop back to first
     }
-    scrollToTestimonial();
   };
 
   // Handle previous button click
@@ -27,22 +38,36 @@ export const TestimonialsSection = ({ testimonials }) => {
     } else {
       setCurrentIndex(testimonials.length - 1); // Loop to last
     }
-    scrollToTestimonial();
   };
 
   // Scroll to the current testimonial
   const scrollToTestimonial = () => {
     if (containerRef.current) {
       const container = containerRef.current;
-      const card = container.children[currentIndex];
-      const containerWidth = container.offsetWidth;
-      const cardWidth = card.offsetWidth;
-      const scrollPosition = card.offsetLeft - (containerWidth - cardWidth) / 2;
       
-      container.scrollTo({
-        left: scrollPosition,
-        behavior: 'smooth'
-      });
+      if (isMobile) {
+        // For mobile, scroll to show only the current card
+        const card = container.children[currentIndex];
+        const containerWidth = container.offsetWidth;
+        const cardWidth = card.offsetWidth;
+        const scrollPosition = card.offsetLeft - (containerWidth - cardWidth) / 2;
+        
+        container.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        // For desktop, maintain current behavior
+        const card = container.children[currentIndex];
+        const containerWidth = container.offsetWidth;
+        const cardWidth = card.offsetWidth;
+        const scrollPosition = card.offsetLeft - (containerWidth - cardWidth) / 2;
+        
+        container.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
@@ -71,22 +96,21 @@ export const TestimonialsSection = ({ testimonials }) => {
     const scrollPosition = container.scrollLeft;
     const containerWidth = container.offsetWidth;
     const cardWidth = container.children[0]?.offsetWidth || 0;
-    const gap = 29; // Same as your gap in the CSS
+    const gap = isMobile ? 0 : 29; // No gap on mobile
     
     // Calculate the nearest card index
     const newIndex = Math.round(scrollPosition / (cardWidth + gap));
     setCurrentIndex(Math.max(0, Math.min(newIndex, testimonials.length - 1)));
-    scrollToTestimonial();
   };
 
   // Auto-scroll when currentIndex changes
   useEffect(() => {
     scrollToTestimonial();
-  }, [currentIndex]);
+  }, [currentIndex, isMobile]);
 
   return (
-    <section className="relative w-full    py-12 lg:py-24 bg-[#fff6f3] overflow-hidden">
-      <div className="  flex flex-col w-full max-w-[1200px] items-start gap-12 lg:gap-[74px] mx-auto px-4 sm:px-6">
+    <section className="relative w-full py-12 lg:py-24 bg-[#fff6f3] overflow-hidden">
+      <div className="flex flex-col w-full max-w-[1200px] items-start gap-12 lg:gap-[74px] mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between w-full">
           <button 
             onClick={handlePrev}
@@ -119,7 +143,10 @@ export const TestimonialsSection = ({ testimonials }) => {
 
         <div 
           ref={containerRef}
-className="flex flex-col lg:flex-row items-center gap-6 lg:gap-[29px] w-full overflow-x-auto snap-x snap-mandatory hide-scrollbar"          onTouchStart={handleTouchStart}
+          className={`flex ${isMobile ? 'flex-row' : 'flex-col lg:flex-row'} items-center ${
+            isMobile ? 'gap-0' : 'gap-6 lg:gap-[29px]'
+          } w-full overflow-x-auto snap-x snap-mandatory hide-scrollbar`}
+          onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
           style={{ 
@@ -130,7 +157,9 @@ className="flex flex-col lg:flex-row items-center gap-6 lg:gap-[29px] w-full ove
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="snap-always snap-center flex-shrink-0"
+              className={`snap-always snap-center flex-shrink-0 ${
+                isMobile ? 'w-full px-4' : ''
+              }`}
             >
               <TestimonialCard {...testimonial} />
             </div>
